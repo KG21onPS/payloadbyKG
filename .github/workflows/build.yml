@@ -14,8 +14,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Build payload
-        uses: uses: Scene-Collective/ps4-payload-sdk@b732641
+      - name: Build with PS4 Payload SDK
+        uses: Scene-Collective/ps4-payload-sdk@main
         with:
           app_path: .
           build_command: make
@@ -25,5 +25,5 @@ jobs:
         with:
           name: payloadbyKGtest
           path: |
-            payloadbyKGtest.bin
-            payload.elf
+            *.bin
+            *.elf
