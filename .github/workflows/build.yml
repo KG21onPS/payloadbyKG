@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build payload
-        uses: uses: Scene-Collective/ps4-payload-sdk@main
+        uses: uses: Scene-Collective/ps4-payload-sdk@b732641
         with:
           app_path: .
           build_command: make
